@@ -47,6 +47,12 @@ const App = () => {
           ),
         }} />
         <Tab.Screen name="Buzz" component={PlayerScreen} options={{
+          headerStyle: {
+            backgroundColor: 'rgb(51, 53, 69)',
+          },
+          headerTitleStyle: {
+            color: '#fff'
+          },
           tabBarIcon: ({ focused, color, size }) => (
             <MaterialCommunityIcons
               name="bucket" style={{ color: focused ? 'rgb(236, 94, 113)' : color }} size={size} />
@@ -56,6 +62,12 @@ const App = () => {
           ),
         }} />
         <Tab.Screen name="Profile" component={PlayListScreen} options={{
+          headerStyle: {
+            backgroundColor: 'rgb(51, 53, 69)',
+          },
+          headerTitleStyle: {
+            color: '#fff'
+          },
           tabBarIcon: ({ focused, color, size }) => (
             <Ionicons name="person" style={{ color: focused ? 'rgb(236, 94, 113)' : color }} size={size} />
           ),
